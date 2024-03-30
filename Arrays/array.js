@@ -1,3 +1,5 @@
+const {logSeparator} = require('../logSeparator')
+
 // criando array
 let arrayNumbers = [1, 2, 3, 4, 5]
 
@@ -125,24 +127,3 @@ console.log(arrayNumbers)
 
 arrayNumbers.splice(3, 2)  // remove 2 elemento da posicao apartir do indice 3(inclusive)
 console.log(arrayNumbers)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function logSeparator(separator = "") {
-    console.log(`=====${separator.replaceAll(' ', '-')}=====`)
-}
-
-
-

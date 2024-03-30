@@ -1,5 +1,6 @@
-// criando arrayBI
+const {logSeparator} = require('../logSeparator')
 
+// criando arrayBI
 
 let averageTemp = []
 
@@ -46,30 +47,4 @@ for(let i=0;i<averageTemp.length;i++){
     const media = soma/averageTemp[i].length
 
     console.log(media)
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function logSeparator(separator = "") {
-    console.log(`=====${separator.replaceAll(' ', '-')}=====`)
 }
