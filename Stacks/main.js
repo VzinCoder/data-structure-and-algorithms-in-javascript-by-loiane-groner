@@ -1,4 +1,4 @@
-const {logSeparator} = require('../logSeparator.js')
+const logSeparator = require('../logSeparator.js')
 // importando a stack implementada
 const { StackArray, StackObject } = require('./Stack.js')
 
@@ -13,7 +13,7 @@ console.log(stack)
 stack.push(1)
 console.log(stack)
 
-stack.push(2,3,4,5) 
+stack.push(2, 3, 4, 5)
 console.log(stack)
 
 // removendo elementos da stack
@@ -22,7 +22,7 @@ logSeparator('removendo elementos na stack')
 console.log(stack)
 
 const itemExcluded = stack.pop()
-console.log("item removido: "+itemExcluded)
+console.log("item removido: " + itemExcluded)
 
 console.log(stack)
 
@@ -70,13 +70,13 @@ console.log(stack)
 logSeparator('acessando a quantidade de elementos contidos na stack')
 
 console.log(stack)
-console.log('Quantidade de elementos: '+stack.size())
+console.log('Quantidade de elementos: ' + stack.size())
 
 stack.push(1)
 stack.push(1)
 stack.push(1)
 console.log(stack)
-console.log('Quantidade de elementos: '+stack.size())
+console.log('Quantidade de elementos: ' + stack.size())
 
 // testando metodo toString
 logSeparator('metodo toString')

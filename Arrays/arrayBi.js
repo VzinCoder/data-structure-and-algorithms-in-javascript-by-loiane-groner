@@ -1,4 +1,4 @@
-const {logSeparator} = require('../logSeparator')
+const logSeparator = require('../logSeparator')
 
 // criando arrayBI
 

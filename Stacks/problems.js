@@ -1,4 +1,4 @@
-const { logSeparator } = require('../logSeparator.js')
+const logSeparator = require('../logSeparator.js')
 
 // importando a stack
 const { StackObject, StackArray } = require('./Stack')
@@ -21,24 +21,24 @@ function decimalToBinary(decNumber) {
 
     let numberBinary = ''
 
-    while(!stack.isEmpty()){
-        numberBinary+= stack.pop()
+    while (!stack.isEmpty()) {
+        numberBinary += stack.pop()
     }
-         
+
     return numberBinary
 }
 
-console.log(233,10,1000)
-console.log(decimalToBinary(233),decimalToBinary(10),decimalToBinary(1000))
+console.log(233, 10, 1000)
+console.log(decimalToBinary(233), decimalToBinary(10), decimalToBinary(1000))
 
 //Algoritmo conversor de base
 logSeparator('Algoritmo conversor de base')
 
-function baseConverter(decNumber,base){
+function baseConverter(decNumber, base) {
     const stack = new StackObject()
     const digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-    if(!(base >=  2 && base<=36)){
+    if (!(base >= 2 && base <= 36)) {
         return ''
     }
 
@@ -53,14 +53,14 @@ function baseConverter(decNumber,base){
 
     let numberConverted = ''
 
-    while(!stack.isEmpty()){
-        numberConverted+= digits[stack.pop()] 
+    while (!stack.isEmpty()) {
+        numberConverted += digits[stack.pop()]
     }
-         
+
     return numberConverted
 }
 
-console.log(baseConverter(100345,2))
-console.log(baseConverter(100345,8))
-console.log(baseConverter(100345,16))
-console.log(baseConverter(100345,35))
+console.log(baseConverter(100345, 2))
+console.log(baseConverter(100345, 8))
+console.log(baseConverter(100345, 16))
+console.log(baseConverter(100345, 35))

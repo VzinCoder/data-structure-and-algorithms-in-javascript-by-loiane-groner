@@ -1,4 +1,4 @@
-const { logSeparator } = require('../logSeparator')
+const logSeparator = require('../logSeparator')
 
 // criando array
 let arrayNumbers = [1, 2, 3, 4, 5]
@@ -134,7 +134,7 @@ logSeparator('adicionando e removendo elementos de uma posicao especifica sem me
 
 Array.prototype.addElementInIndex = function (element, index) {
 
-    if(index > this.length || index < 0){
+    if (index > this.length || index < 0) {
         throw new Error('Position invalid')
     }
 
@@ -147,19 +147,19 @@ Array.prototype.addElementInIndex = function (element, index) {
 
 Array.prototype.removeElementInIndex = function (index) {
 
-    if(index >= this.length || index < 0){
+    if (index >= this.length || index < 0) {
         throw new Error('Position invalid')
     }
 
     for (let i = index; i < this.length; i++) {
-        this[i] = this[i+1]
+        this[i] = this[i + 1]
     }
 
     return this.reIndex()
 }
 
 console.log(arrayNumbers)
-arrayNumbers.addElementInIndex(10,2)
+arrayNumbers.addElementInIndex(10, 2)
 console.log(arrayNumbers)
 
 arrayNumbers = arrayNumbers.removeElementInIndex(2)
