@@ -1,4 +1,4 @@
-const logSeparator = require('../logSeparator')
+const logSeparator = require('../../logSeparator')
 
 // importando a queue
 const Queue = require('./Queue')
