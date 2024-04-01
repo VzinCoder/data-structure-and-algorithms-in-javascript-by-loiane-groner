@@ -1,4 +1,4 @@
 
-exports.logSeparator = function(separator = "") {
+module.exports = function(separator = "") {
     console.log(`=====${separator.replaceAll(' ', '-')}=====`)
 }
