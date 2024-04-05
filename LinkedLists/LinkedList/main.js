@@ -3,7 +3,7 @@ const logSeparator = require('../logSeparator')
 
 
 // importando a linkedList
-const LinkedList = require('./LinkedList')
+const LinkedList = require('./LinkedList/LinkedList')
 
 
 // criando a linkedList

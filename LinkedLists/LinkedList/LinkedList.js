@@ -1,4 +1,4 @@
-const defaultEquals = require('../util')
+const defaultEquals = require('../../util')
 const Node = require('./Node')
 
 
