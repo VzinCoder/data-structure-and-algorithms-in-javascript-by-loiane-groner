@@ -1,9 +1,9 @@
-const logSeparator = require('../logSeparator')
+const logSeparator = require('../../logSeparator')
 
 
 
 // importando a linkedList
-const LinkedList = require('./LinkedList/LinkedList')
+const LinkedList = require('./LinkedList')
 
 
 // criando a linkedList
