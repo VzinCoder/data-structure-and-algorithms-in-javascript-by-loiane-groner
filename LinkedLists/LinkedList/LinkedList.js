@@ -30,7 +30,7 @@ module.exports = class LinkedList {
     }
 
     insert(element, index) {
-        if (this.#isOutOfRange(index)) {
+        if (this.isOutOfRange(index)) {
             return false
         }
 
@@ -57,7 +57,7 @@ module.exports = class LinkedList {
 
     getElementAt(index) {
 
-        if (this.isEmpty() || this.#isOutOfRange(index)) {
+        if (this.isEmpty() || this.isOutOfRange(index)) {
             return
         }
 
@@ -76,7 +76,7 @@ module.exports = class LinkedList {
 
     removeAt(index) {
 
-        if (this.isEmpty() || this.#isOutOfRange(index)) {
+        if (this.isEmpty() || this.isOutOfRange(index)) {
             return
         }
 
@@ -93,7 +93,7 @@ module.exports = class LinkedList {
         this.count--
     }
 
-    #isOutOfRange(index) {
+    isOutOfRange(index) {
         return index < 0 || index > this.count - 1
     }
 
@@ -116,6 +116,11 @@ module.exports = class LinkedList {
 
     size() {
         return this.count
+    }
+
+    clear(){
+        this.head = undefined
+        this.count = 0
     }
 
 
